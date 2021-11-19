@@ -1,3 +1,64 @@
-#time{
-    background-image: url(../images/img/fundo-time);
+#conheca{
+    width: 100vw;
+    background-image: url("../img/images/amazona-shirt.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#conheca h1{
+    font-size: 7vw;
+}
+
+#membros{
+    background-image: url("../img/Vector/vector-waves.svg");
+    height: fit-content;
+    overflow-y: auto;
+}
+
+#grupo{
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    float: left;
+}
+
+#membros h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 6vw;
+}
+
+#fotos{
+    width: 60vw;
+    height: fit-content;
+    backdrop-filter: blur(5px);
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#fotos:first-child{
+    float: left;
+}
+
+#fotos:last-child{
+    float: right;
+}
+
+.fotos-equipe{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 2vh;
+    padding: 2vh 0;
+    float: left;
+}
+
+.fotos-equipe>img{
+    height: 25vh;
+    max-width: 20vw;
+    object-fit: contain;
 }

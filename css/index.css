@@ -89,6 +89,9 @@ section{
 /* #region Motivos */
 #motivos{
     padding: 5vw;
+    height: 50vw;
+
+    background-image: url("../img/Vector/bg-shapes.svg");
 }
 
 /* #region Graphs */
@@ -104,6 +107,7 @@ section{
     border-radius: 10px;
 
     padding: 2%;
+    padding-right: 10vw;
 
     display: flex;
     flex-direction: column;
@@ -127,7 +131,7 @@ section{
 
 #graphs p{
     font-size: 1.2vw;
-    line-height: 2vh;
+    line-height: 2.5vh;
 }
 
 #graphs div{
@@ -137,12 +141,12 @@ section{
 
 /* #region Women Reference */
 #w-reference{
-    width: 40vw;
-    height: 85vh;
+    width: 30vw;
+    height: 45vw;
 
     position: absolute;
     top: 12%;
-    left: 37%;
+    left: 40vw;
 
     background-image: url("../img/images/womangraduate.png");
     background-repeat: no-repeat;
@@ -152,7 +156,7 @@ section{
 
 #w-reference div{
     width: 50%;
-    margin-left: 10%;
+    margin-left: 5%;
     padding: 3% 0 3% 10%;
     backdrop-filter: blur(10px);
 
@@ -170,10 +174,10 @@ section{
 /* #endregion */
 
 #motivos>p{
-    width: 35vw;
+    width: 45vw;
 
     position: absolute;
-    top: 75%;
+    top: 85%;
 
     font-size: 1vw;
     line-height: 2.5vh;
@@ -225,5 +229,135 @@ section{
     font-weight: bold;
 }
 /* #endregion */
+
+/* #endregion */
+
+/* #region Responsivo */
+@media screen and (max-width: 768px){
+    
+    /* #region Navbar */
+    #barra>img{
+        width: 9vw;
+    }
+
+    #barra li{
+        font-size: 3vw;
+    }
+    /* #endregion */
+
+    /* #region Conteúdo */
+    
+    /* #region Intro */
+    #intro>div{
+    width: 80vw;
+    top: 50%;
+    }
+
+    #intro h1{
+        font-size: 7vw;
+    }
+
+    #intro h2{
+        font-size: 4vw;
+    }
+    /* #endregion */
+    
+    /* #region Motivos */
+
+    #motivos{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /* #region Graphs */
+    #graphs{
+        width: 60vw;
+        height: 70vw;
+        position: static;
+        align-self: flex-start;
+    }
+
+    #graphs h2{
+        font-size: 2.5vw;
+    }
+
+    #graphs h1{
+        font-size: 3.5vw;
+    }
+
+    #graphs p{
+        font-size: 2vw;
+    }
+    /* #endregion */
+
+    /* #region Women Reference */
+    #w-reference{
+        align-self: flex-end;
+        width: 50vw;
+        height: 40vh;
+
+        position: static;
+    }
+
+    #w-reference h1{
+        font-size: 2.5vw;
+        margin-bottom: 1vh;
+    }
+    #w-reference p{
+        font-size: 2vw;
+    }
+    /* #endregion */
+
+    #motivos>p{
+        width: 70vw;
+        position: static;
+        align-self: flex-start;
+
+        font-size: 3vw;
+        line-height: 2.5vh;
+    }
+
+    /* #endregion */
+
+    /* #region Artigo */
+    #intro-article>.section-content{
+        height: 90%;
+    }
+
+    #intro-article img{
+        width: 30%;
+    }
+
+    #intro-article img,#intro-article h1,#intro-article p{
+        margin-bottom: 5vh;
+    }
+
+    #intro-article h1{
+        font-size: 4vw;
+        text-align: center;
+    }
+
+    #intro-article h2{
+        font-size: 3vw;
+    }
+
+    #intro-article p{
+        font-size: 2.7vw;
+        line-height: 3vh;
+        text-align: center;
+    }
+
+    #intro-article a{
+        margin-bottom: 0;
+        font-size: 3vw;
+        font-weight: bold;
+    }
+    /* #endregion */
+
+    /* #endregion */
+}
 
 /* #endregion */
