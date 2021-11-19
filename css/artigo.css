@@ -1,6 +1,6 @@
 /* #region Main */
 main {
-    background-image: url(../img/woman-banner3.png);
+    background-image: url("../img/artigo/bg.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

@@ -1,6 +1,5 @@
 #conheca{
-    width: 100vw;
-    background-image: url("../img/images/amazona-shirt.jpg");
+    background-image: url("../img/equipe/amazona-shirt.jpg");
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,7 +10,7 @@
 }
 
 #membros{
-    background-image: url("../img/Vector/vector-waves.svg");
+    background-image: url("../img/equipe/vector-waves.svg");
     height: fit-content;
     overflow-y: auto;
 }
@@ -22,6 +21,12 @@
     flex-direction: column;
     align-items: center;
     float: left;
+    padding: 3vh 0;
+    gap: 3vh;
+}
+
+#grupo img{
+    width: 75%;
 }
 
 #membros h1{
@@ -62,3 +67,42 @@
     max-width: 20vw;
     object-fit: contain;
 }
+
+@media screen and (max-width: 768px){
+
+    #grupo{
+        width: 100%;
+    }
+
+    #grupo img{
+        width: 60%;
+    }
+
+    #grupo h1{
+        font-size: 10vw;
+    }
+
+    #membros{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #fotos{
+        width: 100vw;
+        flex-direction: column;
+    }
+
+    .fotos-equipe>img{
+        width: 27vw;
+        max-width: none;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .fotos-equipe{
+        flex-direction: row;
+    }
+
+}
+

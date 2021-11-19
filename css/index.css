@@ -7,6 +7,7 @@ fontstest{
 
 body{
     background-color: #161616;
+    overflow-x: hidden !important;
 }
 
 h1, h2, h3, p, a, li{
@@ -25,13 +26,18 @@ a{
 section{
     width: 100vw;
     height: 100vh;
-    padding: none;
-    margin: none;
+    padding: 0;
+    margin: 0;
 
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;    
+
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
 }
 
 
@@ -69,7 +75,7 @@ nav li{
 
 /* #region Intro */
 #intro{
-    background-image: url("../img/images/fundo-time.jpg");
+    background-image: url("../img/home/bgs/bg1.jpg");
 }
 
 #intro>div{
@@ -93,7 +99,7 @@ nav li{
 
 /* #region Motivos */
 #motivos{
-    background-image: url("../img/Vector/bg-shapes.svg");
+    background-image: url("../img/home/bgs/bg-shapes.svg");
 }
 
 /* #region Graphs */
@@ -151,7 +157,7 @@ nav li{
     top: 15vh;
     left: 45vw;
 
-    background-image: url("../img/images/womangraduate.png");
+    background-image: url("../img/home/constanza.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -191,7 +197,7 @@ nav li{
 
 /* #region Artigo */
 #intro-article{
-    background-image: url("../img/images/woman-banner.png");
+    background-image: url("../img/home/bgs/bg3.png");
 }
 
 #intro-article>.section-content{
@@ -237,7 +243,7 @@ nav li{
 /* #region Orgs */
 
 #orgs-header{
-    background-image: url(../img/Vector/bg-shapes.svg);
+    background-image: url("../img/home/bgs/bg-shapes.svg");
 }
 
 #orgs-header>img{

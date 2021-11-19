@@ -37,42 +37,42 @@
 
 /* #region Backgrounds */
 #programaria{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/images/orgs/orgs-bg/programaria-iana.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/orgs/orgs-bg/programaria-iana.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 #themis{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/images/orgs/orgs-bg/themis-palestra.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/orgs/orgs-bg/themis-palestra.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 #abertha{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/images/orgs/orgs-bg/coletivo-abertha.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/orgs/orgs-bg/coletivo-abertha.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 #fdv{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/images/orgs/orgs-bg/filhasdaviolencia.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/orgs/orgs-bg/filhasdaviolencia.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 #girlup{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/images/orgs/orgs-bg/girlup.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/orgs/orgs-bg/girlup.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 #tributo{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/images/orgs/orgs-bg/tributoaelas.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/orgs/orgs-bg/tributoaelas.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
