@@ -68,6 +68,41 @@
     object-fit: contain;
 }
 
+.fotos-equipe>div{
+    width: 25vw;
+    position: relative;
+}
+
+.fotos-equipe>div>img{
+    width: 100%;
+    position: relative;
+}
+
+.info{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 5%;
+
+    color: white;
+    font-family: 'Inter', sans-serif;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
+
+.info h1{
+    font-family: 'Inter', sans-serif !important;
+    font-weight: bold;
+    font-size: 2vw !important;
+}
+
+.info p, .info h2{
+    font-size: 1.5vw;
+}
+
 @media screen and (max-width: 768px){
 
     #grupo{
@@ -78,7 +113,7 @@
         width: 60%;
     }
 
-    #grupo h1{
+    #grupo>h1{
         font-size: 10vw;
     }
 
@@ -102,6 +137,14 @@
 
     .fotos-equipe{
         flex-direction: row;
+    }
+
+    .info h1{
+        font-size: 2.5vw !important;
+    }
+
+    .info p, .info h2{
+        font-size: 2vw;
     }
 
 }
