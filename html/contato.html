@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
+    <title>Amazona - Confira a nossa equipe</title>
+    <meta name="description" content="Confira a equipe por trás do Projeto Amazona. Somos estudantes do curso de Produção Multimídia da FIAP, com integrantes diversos e motivados!">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/contato.css">
@@ -12,17 +13,17 @@
 <body>
 
     <!-- Navbar -->
-    <nav id="barra">
-        <img src="..\img\images\logowhite-amazona.png" alt="Logo Amazona">
-        <div>
+    <header id="barra">
+        <img src="../img\images\logowhite-amazona.png" alt="Logo Amazona">
+        <nav>
             <ul>
-                <li>Início</li>
-                <li>Artigo</li>
-                <li>Sobre nós</li>
-                <li>Organizações</li>
+                <li><a href="../index.html" target="_blank">Início</a></li>
+                <li><a href="../html/artigo.html" target="_blank">Artigo</a></li>
+                <li><a href="../html/contato.html" target="_blank">Sobre nós</a></li>
+                <li><a href="../html/organizacoes.html" target="_blank">Organizações</a></li>
             </ul>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
 
     <section id="conheca">
@@ -36,42 +37,57 @@
         </div>
         <div id="fotos">
             <div class="fotos-equipe">
-                <img src="../img/images/photo-carina.png">
-                <img src="../img/images/photo-heleie.png">
-                <img src="../img/images/photo-jeej.png">
+                <img src="../img/images/equipe/photo-carina.png">
+                <img src="../img/images/equipe/photo-heleie.png">
+                <img src="../img/images/equipe/photo-jeej.png">
             </div>
             <div class="fotos-equipe">
-                <img src="../img/images/photo-luizizi.png">
-                <img src="../img/images/photo-wesley.png">
+                <img src="../img/images/equipe/photo-luizizi.png">
+                <img src="../img/images/equipe/photo-wesley.png">
             </div>
         </div>
     </section>
 
-    <div id="contato">
-        <div class="informacao">
-            <img src="..\img\images\logowhite-amazona.png" alt="Logo Amazona" width="100" height="100">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad voluptates suscipit fugit porro eum distinctio consequuntur rerum accusantium aspernatur enim neque consectetur harum, consequatur possimus culpa assumenda ab perspiciatis delectus.</p>
-            <p>PROJETO <bold>AMAZONA</bold> DESENVOLVIDO POR <bold>DRIVEN</bold> Turma 1TMUF</p>
-            <p>GLOBAL IMPACT 2021</p>
-            <p>TECH FOR GOOD - ODS 5</p>
+    <footer>
+        <div id="footer-about">
+            <img src="../img/images/logowhite-amazona.png">
+            <p id="lema">Uma luta diária para um mundo mais equalitário.</p>
+            <div id="about-projeto">
+                <p>Projeto <span>Amazona</span></p>
+                <p>Desenvolvido por <span>Driven</span></p>
+            </div>
+            <div id="about-evento">
+                <p>Turma 1TMUF</p>
+                <p>GLOBAL IMPACT 2021</p>
+                <p>TECH FOR GOOD - ODS 5</p>
+            </div>
         </div>
-        <div class="explore">
-                <a class="menu-item text-stroke" href="_blank">Início</a>
-                <a class="menu-item text-stroke" href="_blank">A Causa</a>
-                <a class="menu-item text-stroke" href="_blank">Mulheres Influentes Brasileiras</a>
-                <a class="menu-item text-stroke" href="_blank">Organizações</a>
+
+        <div id="footer-map">
+            <h3>Explore</h3>
+            <a href="../index.html" target="_blank">Iníco</a>
+            <a href="../html/artigo.html" target="_blank">Artigo</a>
+            <a href="../html/organizacoes.html" target="_blank">Organizações</a>
+            <a href="../html/contato.html" target="_blank">Equipe</a>
         </div>
-        <div class="contac-content">
-            <form action="/action_page.php">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome">
-                <label for="email">E-mail:</label>
-                <input type="text" id="email" name="email" >
-                <label for="mensagem">Mensagem:</label>
-                <input type="text" id="mensagem" name="mensagem">
-                <input type="submit" id="button-submit" value="ENVIAR">
-             </form>
+
+        <div id="footer-contact">
+            <h3>Entre em contato conosco</h3>
+            <form>
+                <!-- E-mail -->
+                <label for="email">Nome</label>
+                <input type="email" id="email" name="email">
+                <!-- Nome -->
+                <label for="nome">E-mail</label>
+                <input type="text" id="nome" name="nome" value="">
+                <!-- Mensagem -->
+                <label for="msg">Mensagem</label>
+                <input type="text" id="msg" name="msg" value="">
+                <!-- Enviar -->
+                <input id="button" type="submit" value="Enviar">
+            </form>
         </div>
-    </div>
+
+    </footer>
 </body>
 </html>

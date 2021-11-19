@@ -18,43 +18,49 @@ h1{
     font-weight: bold;
 }
 
+a{
+    text-decoration: none;
+}
+
 section{
+    width: 100vw;
+    height: 100vh;
+    padding: none;
+    margin: none;
+
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-
-    height: 100vh;
+    background-position: center;    
 }
 
 
 /* #region Navbar */
-#barra{
+header{
     width: 98vw;
-    padding: 1vw;
     position: fixed;
 
     backdrop-filter: blur(3px);
     z-index: 10;
 }
 
-#barra, #barra li{
+header, nav li{
     display: inline-block;
     font-family: 'Inter', sans-serif;
     font-size: 1.3vw;
 }
 
-#barra>img{
+header>img{
     width: 5vw;
     float: left;
 }
 
-#barra>div{
+nav{
     float: right;
     padding-top: 1%;
 }
 
-#barra li{
+nav li{
     padding-right: 5vw;
 }
 /* #endregion */
@@ -64,8 +70,6 @@ section{
 /* #region Intro */
 #intro{
     background-image: url("../img/images/fundo-time.jpg");
-    
-    padding-left: 5vw;
 }
 
 #intro>div{
@@ -73,7 +77,8 @@ section{
     height: fit-content;
 
     position: absolute;
-    top: 25%;
+    top: 40vh;
+    left: 10vw;
 }
 
 #intro h1{
@@ -88,19 +93,17 @@ section{
 
 /* #region Motivos */
 #motivos{
-    padding: 5vw;
-    height: 50vw;
-
     background-image: url("../img/Vector/bg-shapes.svg");
 }
 
 /* #region Graphs */
 #graphs{
     width: 35vw;
-    height: 35vw;
+    height: 55vh;
 
     position: absolute;
     top: 12%;
+    left: 4vw;
 
     background-color: rgba(51, 51, 51, .5);
     border: solid #6B47D2 0.5px;
@@ -142,11 +145,11 @@ section{
 /* #region Women Reference */
 #w-reference{
     width: 30vw;
-    height: 45vw;
+    height: 70vh;
 
     position: absolute;
-    top: 12%;
-    left: 40vw;
+    top: 15vh;
+    left: 45vw;
 
     background-image: url("../img/images/womangraduate.png");
     background-repeat: no-repeat;
@@ -161,7 +164,7 @@ section{
     backdrop-filter: blur(10px);
 
     position: relative;
-    top: 75%;
+    top: 45vh;
 }
 
 #w-reference h1{
@@ -174,10 +177,11 @@ section{
 /* #endregion */
 
 #motivos>p{
-    width: 45vw;
+    width: 40vw;
 
     position: absolute;
-    top: 85%;
+    top: 85vh;
+    left: 5vw;
 
     font-size: 1vw;
     line-height: 2.5vh;
@@ -230,11 +234,185 @@ section{
 }
 /* #endregion */
 
+/* #region Orgs */
+
+#orgs-header{
+    background-image: url(../img/Vector/bg-shapes.svg);
+}
+
+#orgs-header>img{
+    height: 70vh;
+    position: absolute;
+    bottom: 10vh;
+    left: 10vw;
+}
+
+#orgs-header>div{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+
+    position: absolute;
+    right: 20vw;
+    bottom: 20vh;
+}
+
+#orgs-header h1, #orgs-header h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 5vw;
+    text-transform: uppercase;
+}
+
+#orgs-header h2{
+    font-size: 4vw;
+    margin-bottom: 4vh;
+}
+
+#orgs-header p{
+    font-size: 1.5vw;
+    line-height: 150%;
+}
+
+/* #regions Orgs List */
+
+/* #endregion */
+#orgs-table{
+    height: fit-content;
+}
+
+#table{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.org-sm{
+    width: 33vw;
+    height: fit-content;
+    position: relative;
+}
+
+.org-sm img{
+    width: 100%;
+    object-fit: contain;
+}
+
+/* #region Orgs Small */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #00000080;
+    overflow: hidden;
+    width: 100%;
+    height: 0%;
+    transition: .5s ease;
+}
+
+.org-sm:hover .overlay {
+    height: 100%;
+}
+
+.org-sm:hover img {
+    filter: blur(5px);
+}
+
+.sobre-txt {
+    color: white;
+    font-size: 1vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+/* #endregion */
+
+/* #endregion */
+
+/* #region Footer */
+
+footer{
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    padding: 5vh 0;
+
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+}
+
+footer h3{
+    font-weight: bold;
+}
+
+footer div, footer form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* #region About */
+#footer-about{
+    gap: 1vh;
+}
+
+#footer-about img{
+    width: 25vw;
+}
+
+#lema{
+    text-transform: none;
+}
+
+#about-projeto p{
+    font-weight: thin;
+}
+
+#about-projeto span{
+    font-weight: bold;
+}
+/* #endregion */
+
+/* #region Form */
+form{
+    width: 100%;
+    height: 80%;
+}
+
+#footer-contact label{
+    color: white;
+}
+
+input{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    width: 100%;
+    margin: 1vh 0;
+}
+
+#button{
+    color: white;
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    border: solid white 1px;
+    border-radius: 50px;
+    padding: 10%;
+}
+/* #endregion */
+
 /* #endregion */
 
 /* #region Responsivo */
 @media screen and (max-width: 768px){
-    
+
     /* #region Navbar */
     #barra>img{
         width: 9vw;
@@ -277,7 +455,6 @@ section{
         width: 60vw;
         height: 70vw;
         position: static;
-        align-self: flex-start;
     }
 
     #graphs h2{
@@ -295,11 +472,19 @@ section{
 
     /* #region Women Reference */
     #w-reference{
-        align-self: flex-end;
         width: 50vw;
-        height: 40vh;
+        height: 45vh;
 
         position: static;
+    }
+
+    #w-reference div{
+        width: 100%;
+        position: static;
+        text-align: center;
+        margin: 0;
+        margin-top: 80%;
+        padding: 2% 0;
     }
 
     #w-reference h1{
@@ -314,9 +499,8 @@ section{
     #motivos>p{
         width: 70vw;
         position: static;
-        align-self: flex-start;
 
-        font-size: 3vw;
+        font-size: 2vw;
         line-height: 2.5vh;
     }
 
@@ -357,6 +541,63 @@ section{
     }
     /* #endregion */
 
+    /* #region Orgs */
+    #orgs-header img{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #orgs-header div{
+        width: 70vw;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -40%);
+        text-align: center;
+    }
+
+    #orgs-header h1{
+        font-size: 6.5vw;
+    }
+
+    #orgs-header h2{
+        font-size: 5.5vw;
+    }
+
+    #orgs-header p{
+        font-size: 3vw;
+    }
+    /* #endregion */
+    
+    /* #region Orgs table */
+    .org-sm{
+        width: 50vw;
+    }
+    
+    .sobre-txt{
+        width: 75%;
+        font-size: 2vw;
+    }
+    /* #endregion */
+    
+    /* #endregion */
+
+    /* #region Footer */
+    footer{
+        flex-direction: column;
+        align-items: center;
+        gap: 4vh;
+    }
+
+    footer div, footer form{
+        align-items: center;
+    }
+
+    /* #region About */
+    #lema{
+        text-align: center;
+    }
+    /* #endregion */
     /* #endregion */
 }
 
