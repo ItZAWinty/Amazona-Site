@@ -1,0 +1,234 @@
+* {
+    box-sizing: border-box;
+}
+
+
+/* Style the body */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+
+/* Header/logo Title */
+
+.header {
+    height: 1200px;
+    width: auto;
+    background-image: url(../img/woman-banner2.png);
+    padding: 0px;
+}
+
+.header h1 {
+    text-align: center;
+    color: white;
+    font-size: 200px;
+    position: left;
+}
+
+.header h2 {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    position: inherit;
+}
+
+.header p {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    position: center;
+    padding: 80px
+}
+
+.header h1 {
+    font-size: 40px;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #16161600;
+    position: relative;
+    position: -webkit-sticky;
+    top: 0;
+    height: 120px;
+}
+
+.navbar a {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navbar a.right {
+    float: right;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+
+/**.mid {
+    height: 400px;
+    background-color: #161616;
+}**/
+
+.main {
+    -ms-flex: 70%;
+    flex: 70%;
+    background-color: white;
+    background-image: url(../img/woman-banner3.png);
+    height: 1200px;
+    width: auto;
+    padding: 400px;
+    padding-top: 300px;
+    text-align: left;
+}
+
+.main h1 {
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    position: left;
+}
+
+.main h2 {
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    position: inherit;
+}
+
+.main p {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    position: center;
+}
+
+.main h1 {
+    font-size: 40px;
+}
+
+img {
+    width: 55%;
+    background-color: none;
+    padding-left: 450px;
+    padding-bottom: 50px;
+    float: justify;
+}
+
+
+/* Footer */
+
+.footer {
+    padding: 0px;
+    text-align: left;
+    background: rgb(0, 0, 0);
+    height: 655px;
+}
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.texto {
+    text-align: justify;
+    font-size: 25px;
+    font-family: sans-serif;
+    color: rgb(255, 255, 255);
+    padding-top: 230px;
+    padding-bottom: 350px;
+    padding-left: 1000px;
+    padding-right: 60px;
+    width: auto;
+}
+
+.rodape {
+    float: left;
+    width: 33.33%;
+    padding-top: 60px;
+    padding-left: 20px;
+    height: 800px;
+    background-color: black;
+    color: white;
+}
+
+.rodape h2,
+h3 {
+    color: white;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 15%;
+    padding-left: 23%;
+    text-align: left;
+}
+
+.rodape h2 {
+    color: white;
+    font-size: 100%;
+}
+
+.rodape img {
+    width: 70%;
+    padding-top: 100px;
+    padding-left: 120px;
+}
+
+.rodape a {
+    color: white;
+    float: left;
+    font-size: 20px;
+    line-break: auto;
+}
+
+.rodape h4 {
+    padding-top: 15%;
+}
+
+input[type=text],
+[type=email] {
+    border: none;
+    border-bottom: 1px solid rgb(20, 20, 20);
+    background-color: #16161600;
+    padding: 5px;
+    padding-top: 20px;
+}
+
+input[type=submit] {
+    font-size: 20px;
+    background-color: #16161600;
+    border-radius: 20px;
+    border-style: hidden;
+    color: white;
+}
